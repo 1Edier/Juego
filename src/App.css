@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #337774;
+  border-radius: 15px;
+  padding: 20px;
+  height: 70vh; 
+  margin-top: 11vh; 
+}
+.corazon{
+  height: 30px;
+}
+
+
+
+
+.title {
+  font-size: 2rem;
+  
+  font-family: 'Arial', sans-serif;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.info-box {
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #152e80;
+  margin: 0 1rem;
+  color: #ccc;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.info-box1 {
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #152e80;
+  color: #ccc;
+  margin: 0 1rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid #ccc;
+  margin-top: 2rem;
+}
+
+.input {
+  border-radius: 5px;
+  width: 32px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #ccc;
+  font-size: 1.2rem; 
+  color: rgb(0, 0, 0); 
+  text-transform: uppercase;
+}
+
+
+
+.button-container {
+  margin-top: 2rem;
+}
+
+.button1 {
+  padding: 0.5rem 1rem;
+  background-color: #0f2174;
   color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  backface-visibility: hidden; 
 }
 
-.App-link {
-  color: #61dafb;
+.button1:hover {
+  transform: scale(1.05);
+}
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #a51616;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  backface-visibility: hidden; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  transform: scale(1.05);
+}
+
+
+
+.message {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  margin: 5px; 
+  border: none;
+}
+
+
+
+.button-container {
+  margin: 5px; 
 }
